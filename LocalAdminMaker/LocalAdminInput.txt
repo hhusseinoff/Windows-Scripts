@@ -1,0 +1,3 @@
+Region	AD Group Name	XD Delivery Group Name	XD Controller
+EU	ADGroupName1	XDDeliveryGroupName1	XDControllerName1
+EU	ADGroupName2	XDDeliveryGroupName2	XDControllerName2
