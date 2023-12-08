@@ -2,6 +2,9 @@
 .Synopsis
   This script grants the "Logon as a Service" right to a specified user.
 
+.Requirements
+  Ensure the Netlogon Service startup type is set to AUTOMATIC and that it's running. Otherwise, changes to the secedit DB will result in the "Failed To Save Local Policy Database" error.
+
 .Parameter ComputerName
   Specifies the name of the computer where the user right should be granted.
   By default, it targets the local computer where the script is executed.
@@ -17,6 +20,7 @@
   Note: This script is based on the original script from https://gist.github.com/grenade/8519655
   but has been heavily modified to include logging and error handling.
 
+  Author: Hyusein Hyuseinov (hyusein.hyuseinov@zonalcontractor.co.uk)
   Edit date: Oct 9th 2023
 
 #>
